@@ -1,0 +1,94 @@
+---
+update_time: "2017.08.06"
+name: Florian Lacrampe
+nickname: quadeare
+age: 27
+school: CESI Toulouse
+profession: Ingénieur DevOps
+blog: https://www.florian-lacrampe.me
+github: https://www.github.com/quadeare
+profile: !!md |
+  Florian Lacrampe, étudiant de cinquième année en informatique à l'eXia.CESI de Toulouse.
+
+  Orienté DevOps et passionné d'informatique de longue date, j'affectionne plus particulièrement l'administration des systèmes GNU/Linux et le développement
+  sur serveur.
+
+  Je tente au quotidien, de privilégier les technologies open-source que ce soit
+  pour le travail ou pour mon utilisation personelle.
+contact:
+  - icon: fa-envelope
+    name: Email
+    value: lacrampe.florian@gmail.com
+  - icon: fa-phone-square
+    name: PhoneNumber
+    value: "+33(0) 6 52 24 45 36"
+  - icon: fa-envelope
+    name: Skype
+    value: Florian Lacrampe
+
+experience:
+  - company: SPHEREA
+    date: 01/09/2016 - Aujourd'hui
+    desc: Ingénieur DevOps
+    project:
+      - des: !!md |
+          ###### Responsable infrastructure cloud
+      - des: !!md |
+          titi
+
+  - company: IKCOM - Toulouse
+    date: 01/09/2016 - Aujourd'hui
+    desc: Stagiaire
+    project:
+      - des: !!md |
+          - Création d'application mobile hybride avec Ionic framework
+          - Maintien d'application web PHP
+          - Création de script Python d'extraction de statistiques sur base de données MySQL
+
+  - company: Action_SSI - Toulouse
+    date: 2013 - 4 mois
+    desc: Stagiaire
+    project:
+      - des: !!md |
+          - Création d'une application Node.js de cartographie réseau
+
+  - company: IT-CE - Toulouse
+    date: 2013 - 5 mois
+    desc: Stagiaire
+    project:
+      - des: !!md |
+          - Migration d'outils Windows vers Linux
+          - Etude technique et fonctionnelle
+          - Phase de test, validation et accompagnement du déploiement
+
+  - company: Sterela - Pins-Justaret
+    date: 2012 - 4 mois
+    desc: Stagiaire
+    project:
+      - des: !!md |
+          - Gestion de parc informatique
+          - Développement d'application web
+
+skills:
+  - name: Administration Système
+    skills:
+      - name: GNU/Linux
+        percentage: 80%
+      - name: Docker
+        percentage: 80%
+      - name: Ansible
+        percentage: 80%
+      - name: OpenStack
+        percentage: 60%
+      - name: Kubernetes
+        percentage: 60%
+
+  - name: Développement
+    skills:
+      - name: Node.js
+        percentage: 60%
+      - name: Python
+        percentage: 60%
+
+---
+

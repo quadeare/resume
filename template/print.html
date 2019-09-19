@@ -1,0 +1,87 @@
+{% extends 'base-print.html' %}
+{% block body_class %}print{% endblock %}
+{% block main %}
+<div class="container">
+    <div class="sidebar">
+        <div class="title">
+            <h1>{{ name }}</h1>
+            <h2>{{ des }}</h2>
+        </div>
+        <ul class="side-info">
+            <li class="someRight">
+                <dt><i class="fa fa-bookmark"></i>Informations générakes</dt>
+                <dd>{{ name }} / {{ gender }} / {{ age }} / {{ grade }}</dd>
+                <dd><span>Ecole：</span>{{school}}</dd>
+                {% if blog %}
+                <dd><span>Blog:</span> <a href="{{ blog }}" target="_blank">{{ blog }}</a></dd>
+                {% endif %}
+                {% if github %}
+                <dd><span>GitHub:</span> <a href="{{ github }}" target="_blank">{{ github }}</a></dd>
+                {% endif %}
+                {% if online %}
+                <dd><span>在线简历:</span> <a href="{{ online }}" target="_blank">{{ online }}</a></dd>
+                {% endif %}
+            </li>
+            <li class="someRight">
+                <dt><i class="fa fa-bookmark"></i>Contact</dt>
+                {% for item in contact %}
+                    <dd><i class="fa {{ item.icon }}"></i>{{ item.name }}: <a {% if item.name == 'Email' %}href="mailto:{{ item.value }}"{% endif %} target="_blank">{{ item.value }}</a></dd>
+                {% endfor %}
+            </li>
+        </ul>
+        {% if intro %}
+        <div class="note">
+            {{ intro |safe }}
+        </div>
+        {% endif %}
+    </div>
+    <div class="main">
+        <ul class="main-info">
+            <li class="skill">
+                <dt><i class="fa fa-bookmark"></i>A propos</dt>
+                {{ profile| safe }}
+            </li>
+
+            <li class="skill">
+                    <dt><i class="fa fa-bookmark"></i>Mes compétences</dt>
+                    {% for item in skills %}
+                        {% for item in item.skills %}
+                        <dd>
+                            <div class="skill-name">{{ item.name }}</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" style="width: {{ item.percentage }}"></div>
+                            </div>
+                        </dd>
+                        {% endfor %}
+                    {% endfor %}
+                </li>
+
+            <li class="experience">
+                <dt><i class="fa fa-bookmark"></i>Experiences professionelles</dt>
+                {% for exp in experience %}
+                        <h2 class="exp-title">{{exp.company}}</h2>
+                        <ul class="exp">
+                            {% for item in exp.project %}
+                            <li>
+                                <div class="circle"></div>
+                                <h4>{{ item.name }} {{ item.date }}
+                                {% if item.website %}
+                                <a href="{{ item.website }}" target="_blank"><i class="fa fa-link"></i>Demo</a>
+                                {% endif %}
+                                {% if item.source_code %}
+                                <a href="{{ item.source_code }}" target="_blank"><i class="fa fa-link"></i>SourceCode</a>
+                                {% endif %}
+                                </h4>
+                                <div class="clearfix">
+                                  {% if item.img %}<img src="{{ item.img }}">{% endif %}
+                                  {{ item.des |safe }}
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                {% endfor %}
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

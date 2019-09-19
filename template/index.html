@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% block main %}
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">                       
+            <img class="profile-image img-fluid float-left" src="assets/images/profile.png" alt="{{ name }}" />
+            <div class="profile-content float-left">
+                <h1 class="name">{{ name }}</h1>
+                <h2 class="desc">{{ profession }}</h2>   
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>                   
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>    
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>   
+                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>                
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-primary float-right" href="print.html" target="_blank"><i class="fas fa-download"></i> Téléchargez mon CV</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">A propos</h2>
+                        <div class="content">
+                            {{ profile| safe }}                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Experiences professionelles</h2>
+                        {% for exp in experience %}
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">{{ exp.company }} - <span class="place"><a href="#">{{ exp.desc }}</a></span> <span class="year">({{ exp.date }})</span></h3>
+                                {% for project in exp.project %}
+                                    {{ project.des| safe }}
+                                {% endfor %}
+                            </div><!--//item-->
+                        {% endfor %}    
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Mes compétences</h2>
+
+                        {% for item in skills %}
+                        <h3 class="heading">{{ item.name }}</h3>
+                        <div class="content">
+                            
+                            <div class="skillset">
+                               
+                                {% for item in item.skills %}
+                                <div class="item">
+                                    <h3 class="level-title">{{ item.name }}</h3>
+                                    <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: {{ item.percentage }}" aria-valuenow="{{ item.percentage }}" aria-valuemin="0" aria-valuemax="100"></div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                {% endfor %}
+                                
+                                
+                            {% endfor %}
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+
+                <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>San Francisco, US</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">jameslee@website.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.website.com</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> MSc Computer Science</h3>
+                                <h4 class="university">University College London <span class="year">(2011-2012)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Computer Science</h3>
+                                <h4 class="university">University of Bristol <span class="year">(2008-2011)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+           
+</body>
+</html> 
+{% endblock %}
