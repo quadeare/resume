@@ -101,6 +101,7 @@ gulp.task('default', ['scripts', 'styles', 'styles-print', 'fonts','html'], () =
   })
   gulp.watch(paths.scripts, ['scripts'])
   gulp.watch(paths.styles, ['styles'])
+  gulp.watch(paths.print_styles, ['styles-print'])
   gulp.watch(['template/*.html', 'data.yaml'], ['html'])
   gulp.watch(["dist/*.html", "dist/assets/*.*"]).on('change', browserSync.reload)
 })

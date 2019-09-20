@@ -28,19 +28,36 @@ contact:
 
 experience:
   - company: SPHEREA
+    url: http://www.spherea.com/
     date: 01/09/2016 - Aujourd'hui
     desc: Ingénieur DevOps
     project:
-      - des: !!md |
-          ###### Responsable infrastructure cloud
-      - des: !!md |
+      - name : Responsable infrastructure cloud
+        des: !!md |
+          - **Ansible** et **Docker** en technique principal de déploiement serveur
+          - Administration serveur **GNU/Linux** et Windows Server
+          - Installation et maintenance d'une forge logicielle **(Gitlab, Jenkins, Nexus, Harbor, Owncloud, Chat etc...)**
+          - Mise en place CI/CD **(Gitlab-CI/Jenkins)** avec template d'automatisation
+          - Mise en place d'un outil de sauvegarde **(Bareos)**
+          - Automatisation d'installation interne et chez le client avec **Ansible**
+          - Tests d'intégration via le CI/CD avec **Vagrant**
+          - Mise en service et maintenance d'une plateforme **Kubernetes** à destination des développeurs (via Rancher)
+          - Utilisation d'OVH Cloud **(OpenStack)** pour l'infrastructure IT (LDAP, VPN, Reverse proxy) et pour les projets spécifiques
+
+      - name : Responsable infrastructure cloud
+        des: !!md |
           titi
 
   - company: IKCOM - Toulouse
     date: 01/09/2016 - Aujourd'hui
     desc: Stagiaire
     project:
-      - des: !!md |
+      - name : Administration système
+        des: !!md |
+          - Maintenance d'un parc serveur OVH
+          - Installation et maintenance d'une forge logicielle (Gitlab, Jenkins)
+      - name : Développement logiciel
+        des: !!md |
           - Création d'application mobile hybride avec Ionic framework
           - Maintien d'application web PHP
           - Création de script Python d'extraction de statistiques sur base de données MySQL
@@ -49,14 +66,16 @@ experience:
     date: 2013 - 4 mois
     desc: Stagiaire
     project:
-      - des: !!md |
+      - name : Développement logiciel
+        des: !!md |
           - Création d'une application Node.js de cartographie réseau
 
   - company: IT-CE - Toulouse
     date: 2013 - 5 mois
     desc: Stagiaire
     project:
-      - des: !!md |
+      - name : Développement logiciel
+        des: !!md |
           - Migration d'outils Windows vers Linux
           - Etude technique et fonctionnelle
           - Phase de test, validation et accompagnement du déploiement
@@ -65,9 +84,13 @@ experience:
     date: 2012 - 4 mois
     desc: Stagiaire
     project:
-      - des: !!md |
+      - name : Maintenance informatique
+        des: !!md |
           - Gestion de parc informatique
           - Développement d'application web
+      - name : Développement logiciel
+        des: !!md |
+          - Dévevoppement d'un outil en PHP de gestion de parc informatique (prêt de materiel, gestion des références, recherche etc...)
 
 skills:
   - name: Administration Système
