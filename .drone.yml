@@ -18,7 +18,6 @@ steps:
     image: plugins/docker
     settings:
       repo: quadeare/resume
-      auto_tag: true
       username:
         from_secret: docker_username
       password:
