@@ -36,10 +36,10 @@ gulp.task('fonts', function() {
 
 gulp.task('scripts', () => {
   return gulp.src([
+    paths.scripts,
       'node_modules/jquery/dist/jquery.min.js',
       'node_modules/velocity-animate/velocity.js',
-      'node_modules/bootstrap/dist/js/bootstrap.min.js',
-      paths.scripts
+      'node_modules/bootstrap/dist/js/bootstrap.min.js'
     ])
     .pipe($.uglify())
     .pipe($.concat({ path: 'scripts.js', stat: { mode: 0666} }))

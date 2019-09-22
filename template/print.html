@@ -11,20 +11,17 @@
         <ul class="side-info">
             <li class="someRight">
                 <dt><i class="fa fa-bookmark"></i>Informations générales</dt>
-                <dd>{{ name }} / {{ age }} </dd>
-                <dd>{{ licence }} </dd>
-                {% if blog %}
-                <dd><span>Blog:</span> <a href="{{ blog }}" target="_blank">{{ blog }}</a></dd>
-                {% endif %}
-                {% if github %}
-                <dd><span>GitHub:</span> <a href="{{ github }}" target="_blank">{{ github }}</a></dd>
-                {% endif %}
+                <dd><script>document.write(' ' + calculateAge(new Date("{{ birthday }}")) + ' ')</script>ans - {{ licence }}</dd>
+                <dd><span>Ecole : </span><a href="{{ school.url }}" target="_blank">{{ school.name }}</a></dd>
+                
             </li>
             <li class="someRight">
                 <dt><i class="fa fa-bookmark"></i>Contact</dt>
                 {% for item in contact %}
                     <dd><i class="fa {{ item.icon }}"></i>{{ item.name }}: <a {% if item.name == 'Email' %}href="mailto:{{ item.value }}"{% endif %} target="_blank">{{ item.value }}</a></dd>
                 {% endfor %}
+                <dd><span><i class="fa fa-github"></i> :</span> <a href="https://{{ github }}" target="_blank">{{ github }}</a></dd>
+                <dd><span><i class="fa fa-wordpress"></i> :</span> <a href="https://{{ blog }}" target="_blank">{{ blog }}</a></dd>
 
                 <li class="skill section">
                         <dt><i class="fa fa-bookmark"></i>Mes compétences</dt>
