@@ -4,22 +4,20 @@
 <div class="container">
     <div class="sidebar">
         <div class="title">
+            <img src="{{ profile_image }}" alt="{{ name }}" />
             <h1>{{ name }}</h1>
-            <h2>{{ des }}</h2>
+            <h2>{{ description }}</h2>
         </div>
         <ul class="side-info">
             <li class="someRight">
-                <dt><i class="fa fa-bookmark"></i>Informations générakes</dt>
-                <dd>{{ name }} / {{ gender }} / {{ age }} / {{ grade }}</dd>
-                <dd><span>Ecole：</span>{{school}}</dd>
+                <dt><i class="fa fa-bookmark"></i>Informations générales</dt>
+                <dd>{{ name }} / {{ age }} </dd>
+                <dd>{{ licence }} </dd>
                 {% if blog %}
                 <dd><span>Blog:</span> <a href="{{ blog }}" target="_blank">{{ blog }}</a></dd>
                 {% endif %}
                 {% if github %}
                 <dd><span>GitHub:</span> <a href="{{ github }}" target="_blank">{{ github }}</a></dd>
-                {% endif %}
-                {% if online %}
-                <dd><span>在线简历:</span> <a href="{{ online }}" target="_blank">{{ online }}</a></dd>
                 {% endif %}
             </li>
             <li class="someRight">
@@ -27,6 +25,21 @@
                 {% for item in contact %}
                     <dd><i class="fa {{ item.icon }}"></i>{{ item.name }}: <a {% if item.name == 'Email' %}href="mailto:{{ item.value }}"{% endif %} target="_blank">{{ item.value }}</a></dd>
                 {% endfor %}
+
+                <li class="skill section">
+                        <dt><i class="fa fa-bookmark"></i>Mes compétences</dt>
+                        {% for skill_group in skills_groups %}
+                        <dt>{{ skill_group.name }}</dt>
+                            {% for skill in skill_group.skills %}
+                            <dd>
+                                <div class="skill-name">{{ skill.name }}</div>
+                                <div class="skill-bar-wrap">
+                                    <div class="skill-bar" style="width: {{ skill.percentage }}"></div>
+                                </div>
+                            </dd>
+                            {% endfor %}
+                        {% endfor %}
+                    </li>
             </li>
         </ul>
         {% if intro %}
@@ -37,44 +50,30 @@
     </div>
     <div class="main">
         <ul class="main-info">
-            <li class="skill">
-                <dt><i class="fa fa-bookmark"></i>A propos</dt>
+            <li class="skill section">
+                <dt><h1><i class="fa fa-bookmark"></i> A propos</h1></dt>
                 {{ profile| safe }}
             </li>
 
-            <li class="skill">
-                    <dt><i class="fa fa-bookmark"></i>Mes compétences</dt>
-                    {% for item in skills %}
-                        {% for item in item.skills %}
-                        <dd>
-                            <div class="skill-name">{{ item.name }}</div>
-                            <div class="skill-bar-wrap">
-                                <div class="skill-bar" style="width: {{ item.percentage }}"></div>
-                            </div>
-                        </dd>
-                        {% endfor %}
-                    {% endfor %}
-                </li>
-
-            <li class="experience">
-                <dt><i class="fa fa-bookmark"></i>Experiences professionelles</dt>
+            <li class="experience section">
+                <dt><h1><i class="fa fa-bookmark"></i> Experiences professionelles</h1></dt>
                 {% for exp in experience %}
-                        <h2 class="exp-title">{{exp.company}}</h2>
+                    <h2><i class="fa fa-building"></i> {{exp.company}} <small>({{ exp.date }})</small></h2>
                         <ul class="exp">
-                            {% for item in exp.project %}
+                            {% for project in exp.project %}
                             <li>
                                 <div class="circle"></div>
-                                <h4>{{ item.name }} {{ item.date }}
-                                {% if item.website %}
-                                <a href="{{ item.website }}" target="_blank"><i class="fa fa-link"></i>Demo</a>
+                                <h4>{{ project.name }}
+                                {% if project.website %}
+                                <a href="{{ project.website }}" target="_blank"><i class="fa fa-link"></i>Demo</a>
                                 {% endif %}
-                                {% if item.source_code %}
-                                <a href="{{ item.source_code }}" target="_blank"><i class="fa fa-link"></i>SourceCode</a>
+                                {% if project.source_code %}
+                                <a href="{{ project.source_code }}" target="_blank"><i class="fa fa-link"></i>SourceCode</a>
                                 {% endif %}
                                 </h4>
                                 <div class="clearfix">
-                                  {% if item.img %}<img src="{{ item.img }}">{% endif %}
-                                  {{ item.des |safe }}
+                                  {% if project.img %}<img src="{{ project.img }}">{% endif %}
+                                  {{ project.des |safe }}
                                 </div>
                             </li>
                             {% endfor %}
