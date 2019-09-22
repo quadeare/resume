@@ -10,12 +10,12 @@
                 <h1 class="name">{{ name }}</h1>
                 <h2 class="desc">{{ description }} - <a href="https://cloud.drone.io/quadeare/resume"><img src="https://cloud.drone.io/api/badges/quadeare/resume/status.svg" /></a></h2>
                 <ul class="social list-inline">
-                    <li class="list-inline-item"><a target="_blank" href="https://twitter.com/Quadeare"><i
+                    <li class="list-inline-item"><a target="_blank" href="https://{{ twitter }}"><i
                                 class="fab fa-twitter"></i></a></li>
                     <li class="list-inline-item"><a target="_blank"
-                            href="https://www.linkedin.com/in/florian-lacrampe-87ab86ab/"><i
+                            href="https://{{ linkedin }}"><i
                                 class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a target="_blank" href="https://github.com/quadeare"><i
+                    <li class="list-inline-item"><a target="_blank" href="https://{{ github }}"><i
                                 class="fab fa-github-alt"></i></a></li>
                 </ul>
             </div>
@@ -83,16 +83,16 @@
                         <h2 class="heading">Informations générales</h2>
                         <div class="content">
                             <ul class="list-unstyled">
+                                <li><i class="fas fa-user-alt"></i><span class="sr-only">General :</span><a
+                                        target="_blank" ><script>document.write(calculateAge(new Date("{{ birthday }}")) + ' ')</script>ans - {{ licence }}</a></li>
                                 <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Localisation:</span><a
                                         target="_blank" href="{{ location.url }}">{{ location.name }}</a></li>
                                 <li><i class="fas fa-graduation-cap"></i><span class="sr-only">Ecole:</span><a
                                         target="_blank" href="{{ school.url }}">{{ school.name }}</a></li>
                                 <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
                                         href="mailto:{{ email }}">{{ email }}</a></li>
-                                <li><i class="fas fa-car"></i><span class="sr-only">Licence driver:</span><a
-                                        target="_blank" >{{ licence }}</a></li>
                                 <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a target="_blank"
-                                        href="{{ blog }}">{{ blog }}</a></li>
+                                        href="https://{{ blog }}">{{ blog }}</a></li>
                             </ul>
                         </div>
                         <!--//content-->

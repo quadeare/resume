@@ -4,7 +4,7 @@ description: Ingénieur DevOps
 profile_image: "https://en.gravatar.com/userimage/28965922/02051d3c8b699c565a46536d922d6bc9?size=200"
 nickname: quadeare
 email: lacrampe.florian@gmail.com
-age: 27 ans
+birthday: '1992-01-02'
 licence: Permis B
 location: 
     name: Toulouse, France
@@ -12,8 +12,10 @@ location:
 school:
     name: CESI Toulouse (2011 - 2016)
     url: https://ecole-ingenieurs.cesi.fr/
-blog: https://www.florian-lacrampe.me
-github: https://www.github.com/quadeare
+blog: florian-lacrampe.me
+github: github.com/quadeare
+linkedin: linkedin.com/in/florian-lacrampe-87ab86ab
+twitter: twitter.com/Quadeare
 profile: !!md |
   Ingénieur orienté **DevOps** et passionné d'informatique de longue date, j'affectionne plus particulièrement l'administration des systèmes **GNU/Linux** et l'exploitation de **solutions libres**.
 
@@ -28,7 +30,7 @@ contact:
   - icon: fa-phone-square
     name: Portable
     value: "+33(0) 6 52 24 45 36"
-  - icon: fa-envelope
+  - icon: fa-skype
     name: Skype
     value: Florian Lacrampe
 
@@ -89,7 +91,7 @@ experience:
     project:
       - name : Développement logiciel
         des: !!md |
-          - Développement d'une solution logicielle de gestion de version en PHP
+          - Migration d'un outil web développé en ASP.NET vers PHP pour une mise en production sous GNU/Linux
 
   - company: Sterela - Pins-Justaret
     date: 2011 - 4 mois
