@@ -12,7 +12,6 @@ location:
 school:
     name: CESI Toulouse
     url: https://ecole-ingenieurs.cesi.fr/
-profession: Ingénieur DevOps
 blog: https://www.florian-lacrampe.me
 github: https://www.github.com/quadeare
 profile: !!md |
