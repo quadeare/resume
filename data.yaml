@@ -43,8 +43,8 @@ experience:
       - name : Installation forge logicielle - IRSN
         des: !!md |
           - Génération de l'infrastructure chez **OVH** avec **Terraform** (OpenStack)
-          - Installation et maintenance d'un cluster Kubernetes (RKE)
-          - Utilisation et intégration dans Kubernetes de la solution **CEPH PaaS** OVH (CEPH-CSI)
+          - Installation et maintenance d'un cluster **Kubernetes** (**RKE**)
+          - Utilisation et intégration dans **Kubernetes** de la solution **CEPH PaaS** OVH (CEPH-CSI)
           - Configuration et automatisation avec **Ansible**
           - Installation et maintenance des outils **(Gitlab, Nexus, Harbor, Nextcloud...)**
           - Mise en place CI/CD **(Gitlab-CI)** avec template d'automatisation
