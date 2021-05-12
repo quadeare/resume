@@ -35,9 +35,39 @@ contact:
     value: Florian Lacrampe
 
 experience:
+  - company: Objectif Libre - Toulouse
+    url: https://www.objectif-libre.com/fr/
+    date: 02/02/2020 - Aujourd'hui
+    desc: Consultant Cloud
+    project:
+      - name : Installation forge logicielle - IRSN
+        des: !!md |
+          - Génération de l'infrastructure chez **OVH** avec **Terraform** (OpenStack)
+          - Installation et maintenance d'un cluster Kubernetes (RKE)
+          - Utilisation et intégration dans Kubernetes de la solution **CEPH PaaS** OVH (CEPH-CSI)
+          - Configuration et automatisation avec **Ansible**
+          - Installation et maintenance des outils **(Gitlab, Nexus, Harbor, Nextcloud...)**
+          - Mise en place CI/CD **(Gitlab-CI)** avec template d'automatisation
+          - Utilisation d'outils Hashicorp **Vagrant**, **Packer**
+          - Sauvegarde des outils avec **Velero** sur object storage **Scaleway**
+
+      - name : Déploiement projets legacy sur Kubernetes - IRSN
+        des: !!md |
+          - Développement de déploiement de plusieurs taches **Helm** complexes
+          - Dimensionnement des conteneurs (limits/requests)
+          - Création d'images OCI (Docker)
+
+      - name : Formations auprès de professionnels
+        des: !!md |
+          - Formations **Docker** et **Kubernetes**
+
+      - name : Expertise conteneurisation - Jolibrain
+        des: !!md |
+          - Optimisation d'images OCI (Docker) dans le cadre d'une migration vers Kubernetes : https://bit.ly/3tG2lCe 
+
   - company: SPHEREA - Toulouse
     url: http://www.spherea.com/
-    date: 01/09/2016 - Aujourd'hui
+    date: 01/09/2016 - 01/02/2020
     desc: Ingénieur DevOps
     project:
       - name : Responsable infrastructure cloud
@@ -80,45 +110,33 @@ experience:
   - company: Action_SSI - Toulouse
     date: 2014 - 4 mois
     desc: Stagiaire
-    project:
-      - name : Développement logiciel
-        des: !!md |
-          - Création d'une application Node.js de cartographie réseau (geolocalisation via un réseau d'entreprise)
-
+    
   - company: IT-CE - Toulouse
     date: 2013 - 5 mois
     desc: Stagiaire
-    project:
-      - name : Développement logiciel
-        des: !!md |
-          - Migration d'un outil web développé en ASP.NET vers PHP pour une mise en production sous GNU/Linux
-
+    
   - company: Sterela - Pins-Justaret
     date: 2011 - 4 mois
     desc: Stagiaire
-    project:
-      - name : Maintenance informatique
-        des: !!md |
-          - Maintenance informatique (~200 postes)
-      - name : Développement logiciel
-        des: !!md |
-          - Dévevoppement d'un outil en PHP de gestion de parc informatique (prêt de materiel, gestion des références, recherche etc...)
 
 skills_groups:
   - name: Administration Système
     skills:
+      - name: Conteneurisation
+        percentage: 90%
       - name: GNU/Linux
         percentage: 80%
-      - name: Docker
-        percentage: 80%
       - name: Ansible
-        percentage: 80%
-      - name: OpenStack
-        percentage: 60%
-      - name: Kubernetes
-        percentage: 60%
+        percentage: 70%
 
-  - name: Développement
+  - name: Cloud
+    skills:
+      - name: Kubernetes
+        percentage: 80%
+      - name: OpenStack (Utilisation)
+        percentage: 80%
+
+  - name: Developpement
     skills:
       - name: Node.js
         percentage: 60%

@@ -27,7 +27,7 @@ const paths = {
   assets: path.join(__dirname, '../src/assets'),
 }
 
-gulp.task('fonts', function() {
+gulp.task('fonts', () => {
   return gulp.src([
       'node_modules/font-awesome/fonts/fontawesome-webfont.*'])
     .pipe(gulp.dest('dist/fonts/'))
@@ -94,7 +94,7 @@ gulp.task('html', () => {
     .pipe($.size())
 })
 
-gulp.task('default', ['scripts', 'styles', 'styles-print', 'fonts','html'], () => {
+gulp.task('default', gulp.series('scripts', 'styles', 'styles-print', 'fonts','html'), () => {
   if (isProd) return
   browserSync.init({
     server: "./dist"
