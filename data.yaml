@@ -57,13 +57,13 @@ experience:
           - Dimensionnement des conteneurs (limits/requests)
           - Création d'images OCI (Docker)
 
-      - name : Formations auprès de professionnels
-        des: !!md |
-          - Formations **Docker** et **Kubernetes**
-
       - name : Expertise conteneurisation - Jolibrain
         des: !!md |
           - Optimisation d'images OCI dans le cadre d'une migration vers k8s : https://bit.ly/3tG2lCe 
+
+      - name : Formations auprès de professionnels
+        des: !!md |
+          - Formations **Docker** et **Kubernetes**
 
   - company: SPHEREA - Toulouse
     url: http://www.spherea.com/
