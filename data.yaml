@@ -63,7 +63,7 @@ experience:
 
       - name : Expertise conteneurisation - Jolibrain
         des: !!md |
-          - Optimisation d'images OCI (Docker) dans le cadre d'une migration vers Kubernetes : https://bit.ly/3tG2lCe 
+          - Optimisation d'images OCI dans le cadre d'une migration vers k8s : https://bit.ly/3tG2lCe 
 
   - company: SPHEREA - Toulouse
     url: http://www.spherea.com/
