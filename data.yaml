@@ -1,6 +1,6 @@
 ---
 name: Florian Lacrampe
-description: Ingénieur DevOps
+description: Consultant cloud
 profile_image: "https://en.gravatar.com/userimage/28965922/02051d3c8b699c565a46536d922d6bc9?size=200"
 nickname: quadeare
 email: lacrampe.florian@gmail.com
@@ -17,7 +17,7 @@ github: github.com/quadeare
 linkedin: linkedin.com/in/florian-lacrampe/
 twitter: twitter.com/Quadeare
 profile: !!md |
-  Ingénieur orienté **DevOps** et passionné d'informatique de longue date, j'affectionne plus particulièrement l'administration des systèmes **GNU/Linux** et l'exploitation de **solutions libres**.
+  Consultant cloud orienté **DevOps** et passionné d'informatique de longue date, j'affectionne plus particulièrement l'administration des systèmes **GNU/Linux** et l'exploitation de **solutions libres**.
 
   Ma **veille technologique** et mon penchant pour le **self-hosting** me permettent de progresser sur ma connaissance générale des technologies open-sources.
 
