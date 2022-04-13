@@ -88,7 +88,7 @@ experience:
     project:
       - name : Responsable infrastructure cloud
         des: !!md |
-          - Maintenance d'un parc serveur dédié / virtuels (OpenStack) **OVH**
+          - Maintenance d'un parc serveur dédiés / virtuels (OpenStack) **OVH**
           - Utilisation de **Ansible** et **Docker** pour l'automatisation des déploiements
           - Installation et maintenance d'une forge logicielle **(Gitlab, Jenkins, Nexus, Harbor, Owncloud, Chat etc...)**
           - Mise en place CI/CD **(Gitlab-CI/Jenkins)** avec template d'automatisation
