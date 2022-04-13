@@ -5,7 +5,7 @@ profile_image: "https://en.gravatar.com/userimage/28965922/f27559d65b5c46df1b719
 nickname: quadeare
 email: lacrampe.florian@gmail.com
 birthday: '1992-01-02'
-licence: Permis A et B
+licence: Permis A / B
 location: 
     name: Toulouse, France
     url: https://www.google.fr/maps/place/Toulouse/
@@ -16,6 +16,7 @@ blog: blog.q2r.net
 github: github.com/quadeare
 linkedin: linkedin.com/in/florian-lacrampe/
 twitter: twitter.com/Quadeare
+credly: www.credly.com/users/florian-lacrampe/badges
 profile: !!md |
   Consultant cloud orienté **DevOps** et passionné d'informatique de longue date, j'affectionne plus particulièrement l'administration des systèmes **GNU/Linux** et l'exploitation de **solutions libres**.
 
@@ -30,17 +31,32 @@ contact:
   - icon: fa-phone-square
     name: Portable
     value: "+33(0) 6 52 24 45 36"
-  - icon: fa-skype
-    name: Skype
-    value: Florian Lacrampe
 
 experience:
-  - company: Objectif Libre - Toulouse
-    url: https://www.objectif-libre.com/fr/
-    date: 02/02/2020 - Aujourd'hui
+  - company: Stack Labs - Toulouse
+    url: https://stack-labs.com/
+    date: 03/09/2021 - Aujourd'hui
     desc: Consultant Cloud
     project:
-      - name : Installation forge logicielle - IRSN
+      - name : Maintenance / Evolution services virtualisés - Prestation Thales AleniaSpace
+        des: !!md |
+          - Gestion parc virtualisé VMWare (ESXi, vCenter, vSAN)
+          - Gestion de réseau virtualisé NSX-T et automatisation (Terraform)
+          - Management de clusters Kubernetes (TKGI)
+
+      - name : Maintenance / Evolution forge logicielle - Prestation Thales AleniaSpace
+        des: !!md |
+          - Installation et maintenance des outils **(Gitlab, Nexus, Harbor, Nextcloud...)**
+          - Support CI/CD (Gitlab-CI)
+          - Automatisation Kuberntes (ArgoCD)
+          - Utilisation d'outils Hashicorp **Vagrant**, **Packer**
+
+  - company: Objectif Libre - Toulouse
+    url: https://www.objectif-libre.com/fr/
+    date: 02/02/2020 - 02/09/2021 "Aquisition Accenture"
+    desc: Consultant Cloud
+    project:
+      - name : Installation forge logicielle - Prestation IRSN
         des: !!md |
           - Génération de l'infrastructure chez **OVH** avec **Terraform** (OpenStack)
           - Installation et maintenance d'un cluster **Kubernetes** (**RKE**)
@@ -51,12 +67,12 @@ experience:
           - Utilisation d'outils Hashicorp **Vagrant**, **Packer**
           - Sauvegarde des outils avec **Velero** sur object storage **Scaleway**
 
-      - name : Déploiement projets legacy sur Kubernetes - IRSN
+      - name : Déploiement projets legacy sur Kubernetes - Prestation IRSN
         des: !!md |
           - Développement de déploiement de plusieurs taches **Helm** complexes
           - Création d'images **OCI** (**Docker**)
 
-      - name : Expertise conteneurisation - Jolibrain
+      - name : Expertise conteneurisation - Prestation Jolibrain
         des: !!md |
           - Optimisation d'images **OCI** dans le cadre d'une migration vers **k8s** : https://bit.ly/3tG2lCe 
 
@@ -69,19 +85,15 @@ experience:
     date: 01/09/2016 - 01/02/2020
     desc: Ingénieur DevOps
     project:
-      - name : Responsable infrastructure cloud
+      - name : Responsable infrastructure cloud (Interne)
         des: !!md |
-          - Maintenance d'un parc serveur **OVH**
-          - Utilisation de **Ansible** et **Docker** en technique principal de déploiement serveur
-          - Administration serveur **GNU/Linux** et Windows Server
+          - Maintenance d'un parc serveur dédié / virtuels (OpenStack) **OVH**
+          - Utilisation de **Ansible** et **Docker** pour l'automatisation des déploiements
           - Installation et maintenance d'une forge logicielle **(Gitlab, Jenkins, Nexus, Harbor, Owncloud, Chat etc...)**
           - Mise en place CI/CD **(Gitlab-CI/Jenkins)** avec template d'automatisation
-          - Mise en place d'un outil de sauvegarde **(Bareos)**
-          - Automatisation d'installation interne et chez le client avec **Ansible**
           - Tests d'intégration via le CI/CD avec **Vagrant**
           - Mise en service et maintenance d'une plateforme **Kubernetes** à destination des développeurs (via Rancher)
-          - Mise en service d'un cluster de bases de données (**MongoDB**, **PostgreSQL**)
-          - Utilisation d'OVH Cloud **(OpenStack)** pour l'infrastructure IT (LDAP, VPN, Reverse proxy) et pour les projets spécifiques
+          - Mise en service d'un cluster de bases de données (**MongoDB**, **PostgreSQL**, **MySQL/MariaDB**)
 
       - name : Formation
         des: !!md |
@@ -95,16 +107,6 @@ experience:
   - company: IKCOM - Toulouse
     date: 2015 - 5 mois
     desc: Stagiaire
-    project:
-      - name : Administration système
-        des: !!md |
-          - Maintenance d'un parc serveur **OVH**
-          - Installation et maintenance d'une **forge logicielle** (**Gitlab**, **Jenkins**)
-      - name : Développement logiciel
-        des: !!md |
-          - Création d'application mobile hybride avec Ionic framework
-          - Maintien d'application web PHP
-          - Création de script Python d'extraction de statistiques sur base de données **MySQL**
 
   - company: Action_SSI - Toulouse
     date: 2014 - 4 mois
@@ -131,16 +133,30 @@ skills_groups:
   - name: Cloud
     skills:
       - name: Kubernetes
+        percentage: 90%
+      - name: VMWare suite
+        description: ESXi, vCenter, NSX-T (Administration)
+        percentage: 60%
+      - name: OpenStack
+        description: Utilisation
         percentage: 80%
-      - name: OpenStack (Utilisation)
+
+  - name: DevOps
+    skills:
+      - name: Gitlab-CI
         percentage: 80%
+      - name: Other CI
+        description: Jenkins, Circle, Action....
+        percentage: 60%
 
   - name: Developpement
     skills:
-      - name: Node.js
-        percentage: 60%
       - name: Python
         percentage: 60%
+      - name: Node.js
+        percentage: 60%
+      - name: Golang
+        percentage: 30%
 
 ---
 
