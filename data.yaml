@@ -13,6 +13,7 @@ school:
     name: CESI Toulouse (2011 - 2016)
     url: https://ecole-ingenieurs.cesi.fr/
 blog: blog.q2r.net
+wiki: wiki.q2r.net
 github: github.com/quadeare
 linkedin: linkedin.com/in/florian-lacrampe/
 twitter: twitter.com/Quadeare
@@ -38,13 +39,13 @@ experience:
     date: 03/09/2021 - Aujourd'hui
     desc: Consultant Cloud
     project:
-      - name : Maintenance / Evolution services virtualisés - Prestation Thales AleniaSpace
+      - name : "[Thales AleniaSpace] Maintenance / Evolution services virtualisés"
         des: !!md |
           - Gestion parc virtualisé VMWare (ESXi, vCenter, vSAN)
           - Gestion de réseau virtualisé NSX-T et automatisation (Terraform)
           - Management de clusters Kubernetes (TKGI)
 
-      - name : Maintenance / Evolution forge logicielle - Prestation Thales AleniaSpace
+      - name : "[Thales AleniaSpace] Maintenance / Evolution forge logicielle"
         des: !!md |
           - Installation et maintenance des outils **(Gitlab, Nexus, Harbor, Nextcloud...)**
           - Support CI/CD (Gitlab-CI)
@@ -56,7 +57,7 @@ experience:
     date: 02/02/2020 - 02/09/2021 "Aquisition Accenture"
     desc: Consultant Cloud
     project:
-      - name : Installation forge logicielle - Prestation IRSN
+      - name : "[IRSN] Installation forge logicielle"
         des: !!md |
           - Génération de l'infrastructure chez **OVH** avec **Terraform** (OpenStack)
           - Installation et maintenance d'un cluster **Kubernetes** (**RKE**)
@@ -67,12 +68,12 @@ experience:
           - Utilisation d'outils Hashicorp **Vagrant**, **Packer**
           - Sauvegarde des outils avec **Velero** sur object storage **Scaleway**
 
-      - name : Déploiement projets legacy sur Kubernetes - Prestation IRSN
+      - name : "[IRSN] Déploiement projets legacy sur Kubernetes"
         des: !!md |
           - Développement de déploiement de plusieurs taches **Helm** complexes
           - Création d'images **OCI** (**Docker**)
 
-      - name : Expertise conteneurisation - Prestation Jolibrain
+      - name : "[Jolibrain] Expertise conteneurisation"
         des: !!md |
           - Optimisation d'images **OCI** dans le cadre d'une migration vers **k8s** : https://bit.ly/3tG2lCe 
 
@@ -85,7 +86,7 @@ experience:
     date: 01/09/2016 - 01/02/2020
     desc: Ingénieur DevOps
     project:
-      - name : Responsable infrastructure cloud (Interne)
+      - name : Responsable infrastructure cloud
         des: !!md |
           - Maintenance d'un parc serveur dédié / virtuels (OpenStack) **OVH**
           - Utilisation de **Ansible** et **Docker** pour l'automatisation des déploiements
@@ -95,11 +96,11 @@ experience:
           - Mise en service et maintenance d'une plateforme **Kubernetes** à destination des développeurs (via Rancher)
           - Mise en service d'un cluster de bases de données (**MongoDB**, **PostgreSQL**, **MySQL/MariaDB**)
 
-      - name : Formation
+      - name : "[IRSN] Formation"
         des: !!md |
           - Formation **Docker**/**Docker Swarm**/**Ansible** dans le cadre d'une TMA avec l'IRSN
 
-      - name : Développement
+      - name : "[IRSN] Développement"
         des: !!md |
           - Développement **Node.js** et **Python** dans le cadre d'une TMA avec l'IRSN
 

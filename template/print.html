@@ -18,10 +18,10 @@
             <li class="someRight">
                 <dt><i class="fa fa-bookmark"></i>Contact</dt>
                 {% for item in contact %}
-                    <dd><i class="fa {{ item.icon }}"></i>{{ item.name }}: <a {% if item.name == 'Email' %}href="mailto:{{ item.value }}"{% endif %} target="_blank">{{ item.value }}</a></dd>
+                    <dd><i class="fa {{ item.icon }}"></i> <a {% if item.name == 'Email' %}href="mailto:{{ item.value }}"{% endif %} target="_blank">{{ item.value }}</a></dd>
                 {% endfor %}
-                <dd><span><i class="fa fa-github"></i> :</span> <a href="https://{{ github }}" target="_blank">{{ github }}</a></dd>
-                <dd><span><i class="fa fa-wordpress"></i> :</span> <a href="https://{{ blog }}" target="_blank">{{ blog }}</a></dd>
+                <dd><span><i class="fa fa-github"></i> </span> <a href="https://{{ github }}" target="_blank">{{ github }}</a></dd>
+                <dd><span><i class="fa fa-wordpress"></i> </span> <a href="https://{{ blog }}" target="_blank">{{ blog }}</a> / <a href="https://{{ wiki }}" target="_blank">{{ wiki }}</a></dd>
 
                 <li class="skill section">
                         <dt><i class="fa fa-bookmark"></i>Mes compétences</dt>
