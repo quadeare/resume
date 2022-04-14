@@ -105,6 +105,7 @@ experience:
 
 
   - company: IKCOM - Toulouse
+    url: http://ikcom.fr
     date: 2015 - 5 mois
     desc: Stagiaire
 
@@ -113,10 +114,12 @@ experience:
     desc: Stagiaire
     
   - company: IT-CE - Toulouse
+    url: https://groupebpce.com/en/company-directory/it-ce
     date: 2013 - 5 mois
     desc: Stagiaire
     
   - company: Sterela - Pins-Justaret
+    url: http://www.sterela.fr/
     date: 2011 - 4 mois
     desc: Stagiaire
 
