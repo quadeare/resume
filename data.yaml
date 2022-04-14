@@ -121,14 +121,6 @@ experience:
     desc: Stagiaire
 
 skills_groups:
-  - name: Administration Système
-    skills:
-      - name: Conteneurisation
-        percentage: 90%
-      - name: GNU/Linux
-        percentage: 80%
-      - name: Ansible
-        percentage: 70%
 
   - name: Cloud
     skills:
@@ -148,6 +140,15 @@ skills_groups:
       - name: Other CI
         description: Jenkins, Circle, Action....
         percentage: 60%
+
+  - name: Administration Système
+    skills:
+      - name: Conteneurisation
+        percentage: 90%
+      - name: GNU/Linux
+        percentage: 80%
+      - name: Ansible
+        percentage: 70%
 
   - name: Developpement
     skills:

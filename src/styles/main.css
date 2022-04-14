@@ -436,8 +436,8 @@ b, strong {
   font-size: 20px;
   color: #545e69;
   position: relative;
-  margin-top: 0;
-  margin-bottom: 10;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .skills .skillset .level-title .level-label {
@@ -810,4 +810,11 @@ Circle steps
   border-left-color: #eaecf1;
   border-width: 11px;
   margin-top: -11px;
+}
+
+
+
+.content .dashed {
+  border-top: 3px dashed #bbb;
+  margin-top: 20px;
 }
