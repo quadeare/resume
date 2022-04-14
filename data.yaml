@@ -42,15 +42,14 @@ experience:
       - name : "[Thales AleniaSpace] Maintenance / Evolution services virtualisés"
         des: !!md |
           - Gestion parc virtualisé VMWare (ESXi, vCenter, vSAN)
-          - Gestion de réseau virtualisé NSX-T et automatisation (Terraform)
+          - Gestion de réseaux virtualisés NSX-T et automatisation (Terraform)
           - Management de clusters Kubernetes (TKGI)
 
       - name : "[Thales AleniaSpace] Maintenance / Evolution forge logicielle"
         des: !!md |
-          - Installation et maintenance des outils **(Gitlab, Nexus, Harbor, Nextcloud...)**
-          - Support CI/CD (Gitlab-CI)
-          - Automatisation Kuberntes (ArgoCD)
-          - Utilisation d'outils Hashicorp **Vagrant**, **Packer**
+          - Installation et maintenance des outils **(Gitlab, Jfrog platform, Harbor, Sonarqube...)**
+          - Support CI/CD (Gitlab-CI, scripting bash/python)
+          - Support Kubernetes avancé (RBAC, PSP, CNI...) et automatisation ArgoCD
 
   - company: Objectif Libre - Toulouse
     url: https://www.objectif-libre.com/fr/
