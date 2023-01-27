@@ -56,7 +56,7 @@
     "nib": "^1.1.2",
     "path": "^0.12.7",
     "rimraf": "^2.6.1",
-    "simple-git": "^1.73.0"
+    "simple-git": "^3.16.0"
   },
   "author": "quadeare",
   "license": "MIT"
